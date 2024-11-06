@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a760d1109c.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="headerDesktop">
+        <div class="header-topo">
+            <div class="header-topo-itens item1">
+                <p>Compre em até 6x sem juros</p>
+            </div>
+            <div class="header-topo-itens item2">
+                <p>Frete grátis em compras acima de R$600</p>
+            </div>
+            <div class="header-topo-itens item3">
+                <p>Compre marcas exclusivas com segurança</p>
+            </div>
+        </div>
+        <div class="header-meio">
+            <search>
+                <input type="text" placeholder="BUSCAR">
+                <img class="" src="imgs/magnifying-glass (1).png" alt="Logo" width="12px" height="auto">
+            </search>
+            <div class="header-logo">
+                <img src="imgs/logo (1).png" alt="Logo">
+            </div>
+            <div class="header-meio-icons">
+                <div class="header-meio-icons header-icon1">
+                    <img src="imgs/heart.png" alt="Logo" width="25px" height="auto">
+                </div>
+                <div class="header-meio-icons header-icon2">
+                    <img src="imgs/user-icon.png" alt="Logo" width="23px" height="auto">
+                </div>
+                <div class="header-meio-icons header-icon3">
+                    <img src="imgs/shopping-bag.png" alt="Logo" width="20" height="24px">
+                    <div class="circulo-shopping-bag">
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header-menu">
+            <div class="menu-item menu-completo">
+                <p>Toda a loja</p>
+                <img src="imgs/menu-icon.png" alt="Logo" width="14px" height="9px">
+            </div>
+            <div class="menu-item">
+                <p>Roupas</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-item">
+                <p>Calçados</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-item">
+                <p>Acessórios</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-item">
+                <p>Perfumes</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-item">
+                <p>Marcas</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-item">
+                <p>Infantil</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </nav>
+    </header>
+    <header class="headerMobile">
+        <div class="header-topo">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>Compre em até 6x sem juros</p>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="header-meio">
+            <div class="header-meio-icons">
+                <div class="header-meio-icons header-icon1">
+                    <img src="imgs/icon-menu-mobile.png" alt="Logo">
+                </div>
+                <div class="header-meio-icons header-icon2">
+                    <img src="imgs/heart-mobile.png" alt="Logo">
+                </div>
+            </div>
+            <div class="header-logo">
+                <img src="imgs/logo (1).png" alt="Logo" height="44" width="auto">
+            </div>
+            <div class="header-meio-icons">
+                <div class="header-meio-icons header-icon3">
+                    <img src="imgs/user-icon-mobile.png" alt="Logo">
+                </div>
+                <div class="header-meio-icons header-icon4">
+                    <img src="imgs/shopping-bag-mobile.png" alt="Logo">
+                    <div class="circulo-shopping-bag">
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <search>
+            <label>Busca</label>
+            <input type="text" placeholder="EX. CAMISETA">
+            <img class="" src="imgs/search_icon-mobile.png" alt="Logo">
+        </search>
+    </header>
+    <main>
+        <div class="carrosel">
+            <div class="carrosel-banners">
+                <a href="#" class="banner banner01">
+                    <img src="imgs/banner01.png" alt="Banner 1">
+                </a>
+                <a href="#" class="banner banner02">
+                    <img src="imgs/banner01.png" alt="Banner 2">
+                </a>
+                <a href="#" class="banner banner03">
+                    <img src="imgs/banner01.png" alt="Banner 3">
+                </a>
+            </div>
+            <div class="controles-banners">
+                <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="linhas">
+                <span class="linha" onclick="goToSlide(0)"></span>
+                <span class="linha" onclick="goToSlide(1)"></span>
+                <span class="linha" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+        <div class="bannerMobile">
+            <img src="imgs/banner01-mobile.png" alt="Banner 3">
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <section class="tatuape">
+            <img src="imgs/TC-Logo-1.png" alt="Logo Footer">
+            <p>Bem-vindo ao universo Tatuapé Conceito, onde estilo e qualidade se unem para criar uma experiência única
+                de moda.</br>
+                </br>
+                A Tatuapé Conceito é mais do que apenas roupas; é uma expressão de personalidade, elegância e conforto.
+                Com uma linha completa de produtos,
+                incluindo polos, camisetas, camisas, calças, bermudas & shorts, jaquetas e casacos.
+            </p>
+        </section>
+        <div class="newsletter">
+            <form>
+                <p>Assine nossa newsletter</p>
+                <input type="text" placeholder="Nome:" name="Nome" id="Nome">
+                <input type="text" placeholder="E-mail:" name="Email" id="Email">
+                <div class="checkbox">
+                    <label class="caixinha">
+                        <input type="checkbox" name="exemplo" />
+                        <span></span>
+                    </label>
+                    <p>Aceito receber promoções por e-mail</p>
+                </div>
+                <input type="submit" value="Assinar" id="submitNewsletter">
+            </form>
+        </div>
+        <div class="informacoes">
+            <div class="blocos bloco01">
+                <h4>Fale Conosco</h4>
+                <p>Whatsapp (11) 93447-8717</p>
+                </br>
+                <p>Fixo</p>
+                <p>2296-6763 (Loja física)</p>
+                <p>2942-9950 (Escritório)</p>
+                </br>
+                <p>Email</p>
+                <p>vendasonline@tatuapeconceito.com.br</p>
+            </div>
+            <div class="blocos bloco02">
+                <h4>Tatuapé Conceito</h4>
+                <p>Nossa História</p>
+                <p>Política de Privacidade</p>
+                <p>Termos e Condições</p>
+            </div>
+            <div class="blocos bloco03">
+                <h4>Informações</h4>
+                <p>Trocas e Devoluções</p>
+                <p>Dúvidas Frequentes</p>
+                <p>Venda Assistida</p>
+            </div>
+            <div class="blocos bloco04">
+                <h4>Endereço</h4>
+                <p>R. Tuiuti, 2636 - Tatuapé - São Paulo / SP</p>
+                <p>03307-005</p>
+                </br>
+                <p>Horário de funcionamento - Loja física</p>
+                <p>Segunda a Sábado das 10h às 20h</p>
+                <div class="dados-Frequentes">
+                    <img src="imgs/icons-footer.png" alt="Icon Footer">
+                    <div class="linksIcons">
+                        <a href="#">
+                            <p id="link01">Envie sua mensagem</p>
+                        </a>
+                        <a href="#">
+                            <p id="link02">Whatsapp</p>
+                        </a>
+                        <a href="#">
+                            <p id="link03">Trocas e devoluções</p>
+                        </a>
+                        <a href="#">
+                            <p id="link04">Fatura Cartão</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blocos bloco05">
+                <img src="imgs/icons-cartoes-footer.png" alt="Icon Footer">
+                <img src="imgs/icon-facebook.png" alt="Icon Footer" id="iconFace">
+                <img src="imgs/icon-instagram.png" alt="Icon Footer" id="iconInsta">
+            </div>
+        </div>
+        <div class="final">
+            <p>© 2023 - TATUAPÉ CONCEITO COMERCIO DE ROUPAS E ACESSORIOS LTDA CNPJ: 17.521.536/0001-55</p>
+            <img src="imgs/logoConvertr.png" alt="Logo Convertr">
+        </div>
+    </footer>
+</body>
+
+</html>
