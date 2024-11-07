@@ -734,5 +734,73 @@ footer .final img {
         display: none;;
     }
 
+    footer .informacoes-mobile .formasPagamento {
+        height: 209px;
+        border-bottom: 2px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .informacoes-mobile .formasPagamento p {
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    footer .informacoes-mobile .siteSeguro {
+        height: 209px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .informacoes-mobile .siteSeguro p {
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .menu-expansivel {
+        width: 300px;
+    }
+    
+    .menu-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .menu-item h3 {
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    
+    .menu-item .content {
+        display: none;
+        padding: 15px;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+    }
+    
+    .menu-item.active .content {
+        display: block;
+    }
+    
+    .menu-item:hover {
+        background-color: #eee;
+    }
+
 
 }
