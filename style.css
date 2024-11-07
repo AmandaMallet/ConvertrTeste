@@ -170,14 +170,14 @@ header {
 
 
 /* Carrosel*/
-.carrosel {
+ .carrosel {
     position: relative;
     width: 100%;
     overflow: hidden;
     display: block;
 }
 
-.carrosel-banners {
+ .carrosel-banners {
     display: flex;
     transition: transform 0.5s ease;
 }
@@ -192,7 +192,7 @@ header {
     display: block;
 }
 
-.controles-banners {
+ .controles-banners {
     position: absolute;
     bottom: 9%;
     display: flex;
@@ -248,6 +248,47 @@ header {
 
 .bannerMobile {
     display: none;
+}
+
+/* Banner Duplo*/
+
+main .bannerDuplo {
+    width: auto;
+    height: auto;
+    max-height: 632px;
+    overflow: hidden;
+    display: flex;
+}
+
+main .imagens-bannerDuplo {
+    max-width: 960px;
+    flex: 1px;
+}
+
+main .imagens-bannerDuplo img {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+}
+
+main .BannerMcDaniel {
+    margin-top: 100px;
+}
+
+main .imagemDesktop-bannerDuplo {
+    display: block; 
+}
+
+main .imagemMobile-bannerDuplo {
+    display: none; 
+}
+
+main .bannerSneakersDesktop {
+    display: flex; 
+ }
+
+main .bannerSneakersMobile {
+   display: none; 
 }
 
 /* //////////////////////// Footer //////////////////////////////// */
@@ -377,7 +418,7 @@ footer .newsletter form input#submitNewsletter {
     margin-top: 54px;
 }
 
-footer .informacoes {
+footer .informacoes-desktop {
     background-color: #fff;
     width: auto;
     height: 530px;
@@ -388,49 +429,53 @@ footer .informacoes {
     padding: 75px 114px 0px 148px;
 }
 
-footer .informacoes .blocos {
+footer .informacoes-mobile {
+    display: none;
+}
+
+footer .informacoes-desktop .blocos {
     width: auto;
     height: auto;
 }
 
-footer .informacoes .bloco04 {
+footer .informacoes-desktop .bloco04 {
     display: flex;
     flex-direction: column;
 }
 
-footer .informacoes .bloco05 {
+footer .informacoes-desktop .bloco05 {
     max-width: 340px;
 }
 
-footer .informacoes .bloco05 img#iconFace {
+footer .informacoes-desktop .bloco05 img#iconFace {
     margin-left: 18px;
 }
 
-footer .informacoes .bloco05 img#iconInsta {
+footer .informacoes-desktop .bloco05 img#iconInsta {
     margin-left: 8px;
 }
 
-footer .informacoes h4 {
+footer .informacoes-desktop h4 {
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-footer .informacoes p {
+footer .informacoes-desktop p {
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
-footer .informacoes .dados-Frequentes {
+footer .informacoes-desktop .dados-Frequentes {
     display: flex;
     margin-top: 60px;
     margin-left: -5px;
 }
 
-footer .informacoes .dados-Frequentes .linksIcons {
+footer .informacoes-desktop .dados-Frequentes .linksIcons {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -448,14 +493,14 @@ footer .informacoes .dados-Frequentes .linksIcons {
 }
 
 
-footer .informacoes .dados-Frequentes .linksIcons a {
+footer .informacoes-desktop .dados-Frequentes .linksIcons a {
     color: #000;
     font-family: var(--fonte-principal);
     font-weight: 600;
     font-size: 12px;
 }
 
-footer .informacoes .dados-Frequentes .linksIcons p {
+footer .informacoes-desktop .dados-Frequentes .linksIcons p {
     color: #000;
     font-family: var(--fonte-principal);
     font-weight: 600;
@@ -602,24 +647,70 @@ footer .final img {
 
     /* banner */
 
-    .bannerMobile {
+    main .bannerMobile {
         display: block;
         overflow: hidden;
         width: 100%;
     }
 
-    .bannerMobile img {
+    main .bannerMobile img {
         overflow: hidden;
         width: 100%;
     }
 
-    .carrosel {
+    main .carrosel {
         display: none;
+    }
+
+    /* banner duplo */
+
+    main .bannerDuplo {
+
+        max-height: max-content;
+        flex-direction: column;
+    }
+    
+    main .imagens-bannerDuplo {
+        max-width: 960px;
+        flex: 1px;
+        max-height: 323px;
+    }
+    
+    main .imagens-bannerDuplo img {
+        width: 100%;
+        height: 100%;
+        max-width: 960px;
+    }
+    
+    main .BannerMcDaniel {
+        margin-top: 100px;
+    }
+
+
+    main .imagemDesktop-bannerDuplo {
+        display: none; 
+    }
+    
+    main .imagemMobile-bannerDuplo {
+        display: block; 
+    }
+
+    main .bannerSneakersDesktop {
+        display: none; 
+     }
+    
+    main .bannerSneakersMobile {
+       display: block; 
     }
 
 
     /* //////////////////////// Footer //////////////////////////////// */
 
+    footer .tatuape {
+        padding: 20px 50px 40px 50px;
+    }
+    
+    
     footer .newsletter form input {
         width: -webkit-fill-available;
         max-width: 624px;
@@ -631,6 +722,17 @@ footer .final img {
         max-width: 624px;
     }
 
+    footer .informacoes-desktop {
+        display: none;
+    }
+
+    footer .informacoes-mobile{
+        display: block;
+    }
+
+    footer .final {
+        display: none;;
+    }
 
 
 }
