@@ -344,6 +344,10 @@ main .categorias .linhaCategorias .categoria {
     flex-direction: column;
 }
 
+main .categorias .linhaCategorias .categoria img {
+    max-height: 630px;
+}
+
 /* //////////////////////// Footer //////////////////////////////// */
 
 footer .tatuape {
