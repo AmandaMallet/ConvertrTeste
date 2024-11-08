@@ -9,3 +9,6 @@ function toggleMenu(element) {
     // Alterna o menu atual
     element.classList.toggle('active');
 }
+
+
+

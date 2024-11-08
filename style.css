@@ -316,37 +316,172 @@ main .bannerMarcas {
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    margin-bottom: 81px;
 }
 
 /* Categorias */
 
-main .categorias {
+main .categoriasDesktop {
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
     padding: 0px 120px;
+    margin: 95px 0px;
+    max-width: 1920px;
 }
 
-main .categorias .tituloCategorias {
+main .categoriasMobile {
+    display: none;
+}
+
+
+main .categoriasDesktop .tituloCategorias {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+main .categoriasDesktop .tituloCategorias .controlesCategorias {
+    width: 92px;
     display: flex;
     justify-content: space-between;
 }
 
-main .categorias .linhaCategorias {
+main .categoriasDesktop .tituloCategorias .controlesCategorias i {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+}
+
+main .categoriasDesktop .linhaCategorias {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
-main .categorias .linhaCategorias .categoria {
+main .categoriasDesktop .linhaCategorias .categoria {
     display: flex;
     flex-direction: column;
 }
 
-main .categorias .linhaCategorias .categoria img {
-    max-height: 630px;
+main .categoriasDesktop .linhaCategorias .categoria img {
+    height: auto;
+    width: 100%;
+    max-width: 470px;
 }
+
+main .categoriasDesktop .linhaCategorias .categoria a {
+    color: #000;
+    margin-top: 37px;
+    width: 100%;
+    text-align: start;
+}
+
+main .categoriasDesktop .linhaCategorias .categoria a label {
+    color: #000;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Produtos */
+
+
+main .produtos {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 119px;
+    padding: 88px 119px 10px 119px;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+main .produtos .tituloProdutos {
+    margin-bottom: 25px;
+}
+
+main .produtos .linhaProdutos {
+    display: flex;
+    position: relative;
+}
+
+main .produtos .linhaProdutos .produto {
+    margin-right: 11px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main .produtos .linhaProdutos .produto .produtoAmei {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+}
+
+main .produtos .linhaProdutos .produto .legendaImagemProduto {
+    padding-right: 5px;
+    margin-top: 23px
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 188px;
+    background-color: #000;
+    opacity: 0.5;
+    translate-y: (-100);
+}
+
+
+
+main .produtos .linhaProdutos .controlesProdutos {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .produtos .linhaProdutos .controleProduto-esquerda {
+    left: -20px;
+    top: 260px;
+}
+
+main .produtos .linhaProdutos .controleProduto-direita {
+    right: -20px;
+    top: 260px;
+}
+
+main .produtos .linhaProdutos .controlesProdutos i {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
 
 /* //////////////////////// Footer //////////////////////////////// */
 
@@ -784,6 +919,7 @@ footer .final img {
         white-space: nowrap;
         display: flex;
         justify-content: start;
+        margin-bottom: 10px;
     }
 
     main .bannerMarcas img {
@@ -792,6 +928,75 @@ footer .final img {
 
     }
 
+    /* Categorias */
+
+    main .categoriasDesktop {
+        display: none;
+    }
+
+
+    main .categoriasMobile {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 0px 19px 0px 19px;
+        margin: 30px 0px 15px 0px;
+        max-width: max-content;
+    
+    }
+
+
+
+    main .categoriasMobile .tituloCategorias {
+        display: flex;
+        justify-content: start;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+
+    h2 {
+        font-size: 25px;
+        font-family: var(--fonte-principal);
+        font-weight: bold;
+    }
+
+    main .categoriasMobile .linhaCategorias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 15px;
+        width: auto;
+    }
+
+    main .categoriasMobile .linhaCategorias .categoria {
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+
+    main .categoriasMobile .linhaCategorias .categoria img {
+        
+        height: 489px;
+        width: max-content;
+    }
+
+    main .categoriasMobile .linhaCategorias .categoria a {
+        color: #000;
+        margin-top: 37px;
+        width: 100%;
+        text-align: start;
+    }
+
+    main .categoriasMobile .linhaCategorias .categoria a label {
+        color: #000;
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        font-weight: 400;
+    }
 
     /* //////////////////////// Footer //////////////////////////////// */
 
