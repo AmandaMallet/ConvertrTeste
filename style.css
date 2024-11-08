@@ -400,7 +400,6 @@ main .produtos {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 119px;
     padding: 88px 119px 10px 119px;
     overflow: hidden;
     max-width: 1920px;
@@ -430,7 +429,12 @@ main .produtos .linhaProdutos .produto .produtoAmei {
 
 main .produtos .linhaProdutos .produto .legendaImagemProduto {
     padding-right: 5px;
-    margin-top: 23px
+    margin-top: 23px;
+    z-index: 999;
+}
+
+main .produtos .linhaProdutos .produto .legendaImagemProduto img {
+    z-index: 1000;
 }
 
 main .produtos .linhaProdutos .produto .quadroImagemProduto {
@@ -441,15 +445,62 @@ main .produtos .linhaProdutos .produto .quadroImagemProduto {
 
 main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar {
     position: absolute;
-    bottom: 0px;
+    bottom: 3px;
     width: 100%;
     height: 188px;
-    background-color: #000;
-    opacity: 0.5;
-    translate-y: (-100);
+    background-color: #0000006b;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
+main .produtos .linhaProdutos .produto .quadroImagemProduto:hover .produtoComprar {
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar .tamanhosProdutos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 21px;
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar .tamanhosProdutos .bolinhasTamanhos {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar .tamanhosProdutos .bolinhasTamanhos p {
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-size: 11px;
+}
+
+main .produtos .linhaProdutos .produto .quadroImagemProduto .produtoComprar button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 180px;
+    height: 57px;
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+#bolinha18 {
+    margin-right: 0px !important;
+}
 
 main .produtos .linhaProdutos .controlesProdutos {
     position: absolute;
@@ -476,12 +527,64 @@ main .produtos .linhaProdutos .controlesProdutos i {
     font-size: 25px;
 }
 
+main .recomendados {
+    margin-bottom: 40px;
+}
+
+main .maisVendidos {
+    background-color: #f1eeee;
+    padding-bottom: 50px;
+    margin-top: 70px;
+}
+
+main .acessoriosDesktop {
+    background-color: #000;
+    padding-bottom: 80px;
+    margin-top: 70px;
+    display: block;
+}
+
+main .acessoriosMobile {
+    display: none;
+}
 
 
+main .acessoriosDesktop .produto h1 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    width: 430px;
+    margin-right: 140px;
+    margin-top: 180px;
+}
 
 
+main .acessoriosDesktop .controleProduto-esquerda {
+    left: 620px !important;
+}
 
 
+main .comentarios .tituloProdutos p {
+    font-size: 25px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+main .comentarios .linhaProdutos {
+
+    justify-content: space-between;
+}
+
+main .comentarios .controleComentarios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    overflow: hidden;
+}
 
 /* //////////////////////// Footer //////////////////////////////// */
 
@@ -943,7 +1046,7 @@ footer .final img {
         padding: 0px 19px 0px 19px;
         margin: 30px 0px 15px 0px;
         max-width: max-content;
-    
+
     }
 
 
@@ -979,7 +1082,7 @@ footer .final img {
     }
 
     main .categoriasMobile .linhaCategorias .categoria img {
-        
+
         height: 489px;
         width: max-content;
     }
@@ -997,6 +1100,59 @@ footer .final img {
         font-size: 18px;
         font-weight: 400;
     }
+
+    /* Produtos */
+
+
+    main .produtos {
+        padding: 50px 18px 10px 18px;
+        max-width: 500px;
+    }
+
+    main .produtos .linhaProdutos .controlesProdutos {
+        display: none;
+    }
+
+    main .produtos .linhaProdutos .produto .quadroImagemProduto img {
+        height: 382px;
+
+    }
+
+    main .comentarios .linhaProdutos .produto .quadroImagemProduto img {
+        height: auto;
+
+    }
+
+    main .acessoriosDesktop {
+        display: none;
+    }
+
+    main .acessoriosMobile {
+        display: block;
+        background-color: #000;
+        padding-bottom: 80px;
+        margin-top: 70px;
+    }
+
+    main .acessoriosMobile .tituloProdutos h2 {
+        color: #fff;
+        font-size: 22px;
+    }
+
+
+    main .Mobile .controleProduto-esquerda {
+        left: 620px !important;
+    }
+
+    main .comentarios .controleComentarios {
+        display: none;
+    }
+
+    main .comentarios {
+        padding: 50px 18px 20px 18px;
+        overflow-x: scroll;
+    }
+
 
     /* //////////////////////// Footer //////////////////////////////// */
 
